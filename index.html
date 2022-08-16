@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Four card feature section</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body{
+      background-color: hsl(0, 0%, 98%);
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      
+    }
+    header{
+      text-align: center;
+      padding: 0 30%;
+    }
+    #sub-header{
+      font-size: 1.4rem;
+    }
+    p{
+      font-size: 15px;
+      color: hsl(229, 6%, 66%);
+    }
+    .info-container{
+      width: 270px;
+      height: 210px;
+      margin: 15px;
+      padding: 2rem 2rem;
+      border-radius: 10px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 29px 5px;;
+    }
+    #supervisor-container{
+      border-top: 5px solid hsl(180, 62%, 55%);
+    }
+    #team-builder{
+      border-top: 5px solid hsl(0, 78%, 62%);
+      position: relative;
+      top: -150px;
+    }
+    #karma-container{
+      border-top: 5px solid hsl(34, 97%, 64%);
+      position: relative;
+      left: 360px;
+      top: -260px;
+    
+    }
+    #calculator-container{
+      border-top: 5px solid  hsl(212, 86%, 64%);
+      grid-column-start: 3;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    .img-container{
+      width: 50px;
+      position: relative;
+      top: 30px;
+      left: 200px;
+    }
+    .svg-img{
+      width: 100%;
+    }
+    #features{
+      margin-top: 100px;
+      padding: 80px 80px 0 80px;
+      display: grid;
+      grid-template-columns: 250px 250px 250px;
+      grid-gap: 110px;
+    }
+    footer{
+      text-align: center;
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+    <p id="sub-header">Reliable, efficient delivery</p>
+    <h1>Powered by Technology</h1>
+    <p>Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+  </header>
+  
+  <section id="features">
+
+  
+  <div class="info-container" id="supervisor-container">
+    <h3>Supervisor</h3>
+    <p>Monitors activity to identify project roadblocks</p>
+    <div class="img-container">
+        <img class="svg-img" src="images/icon-supervisor.svg" alt="">
+    </div>
+  </div>
+
+  <div class="info-container" id="team-builder">
+      <h3>Team Builder</h3>
+      <p>Scans our talent network to create the optimal team for your project</p>
+      
+      <div class="img-container">
+        <img class="svg-img" src="images/icon-team-builder.svg" alt="">
+
+      </div>
+  </div>
+
+  <div class="info-container" id="karma-container">
+    <h3>Karma</h3>
+    <p>Regularly evaluates our talent to ensure quality</p>
+
+    <div class="img-container">
+      <img class="svg-img" src="images/icon-karma.svg" alt="">
+
+    </div>
+  </div>
+
+  <div class="info-container" id="calculator-container">
+    <h3>Calculator</h3>
+    <p>Uses data from past projects to provide better delivery estimates</p>
+
+    <div class="img-container">
+      <img class="svg-img" src="images/icon-calculator.svg" alt="">
+
+    </div>
+  </div>
+
+</section>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Charles Mambo</a>.
+    </p>
+  </footer>
+</body>
+</html>
